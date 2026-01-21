@@ -1,0 +1,183 @@
+.main-footer {
+    padding: 80px 0 0;
+    background-color: #002F47;
+    color: #fff;
+}
+
+.main-footer h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/* About Content */
+.main-footer .about-content p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Service & Link Lists */
+.main-footer .service-content ul,
+.main-footer .link-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-footer .service-content ul li,
+.main-footer .link-content ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.main-footer .service-content ul li a,
+.main-footer .link-content ul li a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-footer .service-content ul li a::before,
+.main-footer .link-content ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: #299B46;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for list items */
+.main-footer .service-content ul li a:hover,
+.main-footer .link-content ul li a:hover {
+    color: #299B46;
+}
+
+.main-footer .service-content ul li a:hover::before,
+.main-footer .link-content ul li a:hover::before {
+    background-color: #fff;
+}
+
+/* Contact Content */
+.main-footer .contact-content .mail-contact,
+.main-footer .contact-content .tel-contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.main-footer .contact-content .mail-contact i,
+.main-footer .contact-content .tel-contact i {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.main-footer .contact-content .mail-contact a,
+.main-footer .contact-content .tel-contact a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for contact links */
+.main-footer .contact-content .mail-contact:hover a,
+.main-footer .contact-content .tel-contact:hover a {
+    color: #299B46;
+}
+
+.main-footer .contact-content .mail-contact:hover i,
+.main-footer .contact-content .tel-contact:hover i {
+    background-color: #299B46;
+    color: #fff;
+}
+
+/* Footer Copyright Section */
+.main-footer .footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-footer .footer-copyright .logo img {
+    max-height: 50px;
+}
+
+/* Social Links */
+.main-footer .social-link ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-footer .social-link ul li a {
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for social icons */
+.main-footer .social-link ul li a:hover {
+    background-color: #299B46;
+    border-color: #299B46;
+    color: #fff;
+}
+
+.main-footer .copyright-text span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+/* Responsive Footer */
+@media (max-width: 991px) {
+    .main-footer .footer-copyright {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-footer {
+        padding: 50px 0 0;
+    }
+
+    .main-footer .footer-copyright {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-footer .social-link ul {
+        justify-content: center;
+    }
+}

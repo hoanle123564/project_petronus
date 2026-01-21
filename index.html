@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/section_1.css">
+    <link rel="stylesheet" href="assets/css/section_2.css">
+    <link rel="stylesheet" href="assets/css/section_3.css">
+    <link rel="stylesheet" href="assets/css/section_4.css">
+    <link rel="stylesheet" href="assets/css/section_5.css">
+</head>
+
+<body>
+    <header>
+        <!-- Overlay for mobile menu -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+        <nav class="header">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.svg" alt="logo">
+                </a>
+
+                <!-- btn menu mobile -->
+                <button class="navbar-toggler mobile-menu-toggle" type="button" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="nav-menu-wrapper" id="navMenuWrapper">
+                    <!-- Mobile header (visible only on mobile) -->
+                    <div class="mobile-menu-header">
+                        <a href="#" class="mobile-logo">
+                            <img src="assets/images/logo.svg" alt="logo">
+                        </a>
+                        <button class="close-menu" id="closeMenu">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <ul class="nav-menu">
+                        <li class="nav-item has-submenu">
+                            <a href="#">Home <i class="fas fa-chevron-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item"><a href="#">Home - Main</a></li>
+                                <li class="sub-menu-item"><a href="#">Home - Menu</a></li>
+                                <li class="sub-menu-item"><a href="#">Home - Slider</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#">About</a></li>
+                        <li class="nav-item has-submenu">
+                            <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item"><a href="#">Service Details</a></li>
+                                <li class="sub-menu-item"><a href="#">Commercial Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a href="#">Blog <i class="fas fa-chevron-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item"><a href="#">Blog Details</a></li>
+                                <li class="sub-menu-item"><a href="#">Latest News</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item"><a href="#">Service Details</a></li>
+                                <li class="sub-menu-item"><a href="#">Blog Details</a></li>
+                                <li class="sub-menu-item"><a href="#">Projects</a></li>
+                                <li class="sub-menu-item"><a href="#">Project Details</a></li>
+                                <li class="sub-menu-item"><a href="#">Team</a></li>
+                                <li class="sub-menu-item"><a href="#">Team Details</a></li>
+                                <li class="sub-menu-item"><a href="#">Pricing Plan</a></li>
+                                <li class="sub-menu-item"><a href="#">Testimonials</a></li>
+                                <li class="sub-menu-item"><a href="#">Image Gallery</a></li>
+                                <li class="sub-menu-item"><a href="#">Video Gallery</a></li>
+                                <li class="sub-menu-item"><a href="#">FAQs</a></li>
+                                <li class="sub-menu-item"><a href="#">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="box-btn">
+                    <a href="#" class="btn-primary btn-highlighted"> <span>Get A Quote</span> </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- section 1 -->
+        <section class="section-1">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <div class="section-title">
+                                <h3>
+                                    Your Shield Against Unwanted Guests
+                                </h3>
+                                <h1>
+                                    Reliable pest & bug control services you can trust
+                                </h1>
+                                <p>
+                                    Protect your home and business with our effective pest control
+                                    solutions.
+                                    From
+                                    termites
+                                    to rodents we eliminate pest quickly & safely.
+                                </p>
+                            </div>
+                            <div class="hero-btn">
+                                <a href="#" class="btn-book btn-highlighted">book a service</a>
+                                <a href="#" class="btn-view">View All Services</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image">
+                            <img src="assets/images/hero-image.png" alt="hero-image">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section 2 -->
+        <section class="section-2">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="service-box swiper swiperSection2 d-flex flex-wrap">
+                        <div class="swiper-wrapper">
+                            <!-- item 1 -->
+                            <div class="service-item swiper-slide" data-aos="fade-up">
+                                <div class="service-icon">
+                                    <img src="assets/images/icon-best-service-1.svg" alt="service-icon">
+                                </div>
+                                <div class="service-content">
+                                    <h3>Comprehensive Coverage</h3>
+                                    <a href="#" class="btn-read">Read More</a>
+                                </div>
+                            </div>
+
+                            <!-- item 2 -->
+                            <div class="service-item swiper-slide" data-aos="fade-up" data-aos-delay="100">
+                                <div class="service-icon">
+                                    <img src="assets/images/icon-best-service-2.svg" alt="service-icon">
+                                </div>
+                                <div class="service-content">
+                                    <h3>Fast Response Times</h3>
+                                    <a href="#" class="btn-read">Read More</a>
+                                </div>
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="service-item swiper-slide" data-aos="fade-up" data-aos-delay="200">
+                                <div class="service-icon">
+                                    <img src="assets/images/icon-best-service-3.svg" alt="service-icon">
+                                </div>
+                                <div class="service-content">
+                                    <h3>Commercial Services</h3>
+                                    <a href="#" class="btn-read">Read More</a>
+                                </div>
+                            </div>
+
+                            <!-- item 4 -->
+                            <div class="service-item swiper-slide" data-aos="fade-up" data-aos-delay="300">
+                                <div class="service-icon">
+                                    <img src="assets/images/icon-best-service-4.svg" alt="service-icon">
+                                </div>
+                                <div class="service-content">
+                                    <h3>24/7 Emergency Services</h3>
+                                    <a href="#" class="btn-read">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 3 -->
+        <section class="section-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="about-image">
+                            <div class="about-image-1 image-anime">
+                                <img src="assets/images/about-us-image.jpg" width="100%" alt="about-us-image">
+                            </div>
+                            <div class="about-circle-image-1 image-anime">
+                                <img src="assets/images/about-circle-img-1.jpg" alt="about-circle-img-1">
+                            </div>
+                            <div class="about-circle-image-2 image-anime">
+                                <img src="assets/images/about-circle-img-2.jpg" alt="about-circle-img-2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="about-us-content">
+                            <div class="section-title">
+                                <h3>About Us</h3>
+                                <h2>Protecting home, businesses, <span>and communities</span></h2>
+                                <p data-aos="fade-up">
+                                    Our mission is simple: to provide dependable pest management services that ensure a
+                                    clean, safe, and comfortable environment for everyone. With years of expertise and a
+                                    customer-first approach ,we go above and beyond to eliminate pests and prevent their
+                                    return.
+                                </p>
+
+                            </div>
+                            <div class="about-us-body d-flex" data-aos="fade-up" data-aos-delay="200">
+                                <div class="about-us-list">
+                                    <ul>
+                                        <li>Expertise You Can Trust</li>
+                                        <li>24/7 Availability</li>
+                                        <li>Certified Professionals</li>
+                                        <li>Affordable Solutions</li>
+                                        <li>Eco-Friendly Approach</li>
+                                        <li>Advanced Techniques</li>
+                                        <li>Customer-Focused Service</li>
+                                        <li>Commitment to Excellence</li>
+                                    </ul>
+                                </div>
+                                <div class="about-us-video">
+                                    <div class="image-video">
+                                        <img src="assets/images/about-us-video-image.jpg" width="100%"
+                                            alt="image-video">
+                                    </div>
+                                    <a href="#" class="play-button">
+                                        <i class="fa-solid fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="about-us-counter d-flex flex-wrap">
+                                <div class="counter-item">
+                                    <div class="counter-number">
+                                        <h2>
+                                            <span class="counter" data-count="29">0</span>+
+                                        </h2>
+                                    </div>
+                                    <div class="counter-text">
+                                        <span>Years of Experience</span>
+                                    </div>
+                                </div>
+                                <div class="counter-item">
+                                    <div class="counter-number">
+                                        <h2>
+                                            <span class="counter" data-count="2">0</span>K
+                                        </h2>
+                                    </div>
+                                    <div class="counter-text">
+                                        <span>Projects Completed</span>
+                                    </div>
+                                </div>
+                                <div class="counter-item">
+                                    <div class="counter-number">
+                                        <h2>
+                                            <span class="counter" data-count="50">0</span>
+                                        </h2>
+                                    </div>
+                                    <div class="counter-text">
+                                        <span>Dedicated Team</span>
+                                    </div>
+                                </div>
+                                <div class="counter-item">
+                                    <div class="counter-number">
+                                        <h2>
+                                            <span class="counter" data-count="98">0</span>%
+                                        </h2>
+                                    </div>
+                                    <div class="counter-text">
+                                        <span>Happy Custom</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <!-- section 4 -->
+        <section class="section-4 ">
+            <div class="container">
+                <div class="row" style="margin-bottom: 80px;">
+                    <div class="col-lg-12 section-row align-items-center">
+                        <div class="section-title-2 text-center">
+                            <h3>Services</h3>
+                            <h2>Expert solutions for every <span>pest problem</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="services-slider">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <!-- Slide 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="service-item">
+                                            <div class="service-image">
+                                                <a href="#" class="image-anime">
+                                                    <img src="assets/images/service-image-1.jpg" alt="services">
+                                                </a>
+                                            </div>
+                                            <div class="service-body">
+                                                <div class="icon-box">
+                                                    <img src="assets/images/icon-best-service-1.svg" alt="icon">
+                                                </div>
+                                                <div class="service-content text-center">
+                                                    <h3>Outdoor Pest Control</h3>
+                                                    <p>Tailored solutions to protect your home from common pests.</p>
+                                                    <a href="#" class="btn-read">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="service-item">
+                                            <div class="service-image">
+                                                <a href="#" class="image-anime">
+                                                    <img src="assets/images/service-image-2.jpg" alt="services">
+                                                </a>
+                                            </div>
+                                            <div class="service-body">
+                                                <div class="icon-box service-icon">
+                                                    <img src="assets/images/icon-best-service-2.svg" alt="icon">
+                                                </div>
+                                                <div class="service-content text-center">
+                                                    <h3>Smart Home Integration</h3>
+                                                    <p>Tailored solutions to protect your home from common pests.</p>
+                                                    <a href="#" class="btn-read">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 3 -->
+                                    <div class="swiper-slide">
+                                        <div class="service-item">
+                                            <div class="service-image">
+                                                <a href="#" class="image-anime">
+                                                    <img src="assets/images/service-image-3.jpg" alt="services">
+                                                </a>
+                                            </div>
+                                            <div class="service-body">
+                                                <div class="icon-box service-icon">
+                                                    <img src="assets/images/icon-best-service-3.svg" alt="icon">
+                                                </div>
+                                                <div class="service-content text-center">
+                                                    <h3>Residential Pest Control</h3>
+                                                    <p>Tailored solutions to protect your home from common pests.</p>
+                                                    <a href="#" class="btn-read">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 6 -->
+                                    <div class="swiper-slide">
+                                        <div class="service-item">
+                                            <div class="service-image">
+                                                <a href="#" class="image-anime">
+                                                    <img src="assets/images/service-image-4.jpg" alt="services">
+                                                </a>
+                                            </div>
+                                            <div class="service-body">
+                                                <div class="icon-box service-icon">
+                                                    <img src="assets/images/icon-best-service-4.svg" alt="icon">
+                                                </div>
+                                                <div class="service-content text-center">
+                                                    <h3>Commercial Solutions</h3>
+                                                    <p>Tailored solutions to protect your home from common pests.</p>
+                                                    <a href="#" class="btn-read">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 7 -->
+                                    <div class="swiper-slide">
+                                        <div class="service-item">
+                                            <div class="service-image">
+                                                <a href="#" class="image-anime">
+                                                    <img src="assets/images/service-image-1.jpg" alt="services">
+                                                </a>
+                                            </div>
+                                            <div class="service-body">
+                                                <div class="icon-box service-icon">
+                                                    <img src="assets/images/icon-best-service-1.svg" alt="icon">
+                                                </div>
+                                                <div class="service-content text-center">
+                                                    <h3>Wildlife Removal</h3>
+                                                    <p>Tailored solutions to protect your home from common pests.</p>
+                                                    <a href="#" class="btn-read">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 8 -->
+                                    <div class="swiper-slide">
+                                        <div class="service-item">
+                                            <div class="service-image">
+                                                <a href="#" class="image-anime">
+                                                    <img src="assets/images/service-image-2.jpg" alt="services">
+                                                </a>
+                                            </div>
+                                            <div class="service-body">
+                                                <div class="icon-box service-icon">
+                                                    <img src="assets/images/icon-best-service-2.svg" alt="icon">
+                                                </div>
+                                                <div class="service-content text-center">
+                                                    <h3>Smart Home Integration</h3>
+                                                    <p>Tailored solutions to protect your home from common pests.</p>
+                                                    <a href="#" class="btn-read">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 9 -->
+                                    <div class="swiper-slide">
+                                        <div class="service-item">
+                                            <div class="service-image">
+                                                <a href="#" class="image-anime">
+                                                    <img src="assets/images/service-image-3.jpg" alt="services">
+                                                </a>
+                                            </div>
+                                            <div class="service-body">
+                                                <div class="icon-box service-icon">
+                                                    <img src="assets/images/icon-best-service-3.svg" alt="icon">
+                                                </div>
+                                                <div class="service-content text-center">
+                                                    <h3>Residential Pest Control</h3>
+                                                    <p>Tailored solutions to protect your home from common pests.</p>
+                                                    <a href="#" class="btn-read">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 10 -->
+                                    <div class="swiper-slide">
+                                        <div class="service-item">
+                                            <div class="service-image">
+                                                <a href="#" class="image-anime">
+                                                    <img src="assets/images/service-image-4.jpg" alt="services">
+                                                </a>
+                                            </div>
+                                            <div class="service-body">
+                                                <div class="icon-box service-icon">
+                                                    <img src="assets/images/icon-best-service-4.svg" alt="icon">
+                                                </div>
+                                                <div class="service-content text-center">
+                                                    <h3>Commercial Solutions</h3>
+                                                    <p>Tailored solutions to protect your home from common pests.</p>
+                                                    <a href="#" class="btn-read">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="footer-service">
+                            <p>Ready for a Pest-Free Home?
+                                <a href="#">Reach Out to Us Today!</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 5  -->
+        <section class="section-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="feature-content">
+                            <div class="section-title">
+                                <h3>Our Features</h3>
+                                <h2>Your trusted partner in pest <span>control excellence</span></h2>
+                                <p>
+                                    We understand how frustrating and disruptive pests can be, which is why we're
+                                    committed to providing fast, reliable, and effective solutions. With a team of
+                                    certified experts, eco-friendly methods, and unmatched customer care.
+                                </p>
+                            </div>
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <div class="service-icon">
+                                        <img src="assets/images/icon-features-item-1.svg" alt="icon">
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3>24/7 Support</h3>
+                                        <p>Our team is available 24/7 to address your pest control needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6"></div>
+                </div>
+            </div>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+    <footer>
+        <div class="main-footer dark-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="about-content">
+                            <h3>About petronus</h3>
+                            <p>
+                                we are dedicated to creating safe, pest-free environments for homes and businesses
+                                alike.
+                                With years of experience in the pest control industry.
+                            </p>
+                            <p>
+                                we pride ourselves on delivering effective, eco-friendly solutions tailored to your
+                                needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <div class="service-content">
+                            <h3>
+                                services
+                            </h3>
+                            <ul>
+                                <li><a href="#">About company</a></li>
+                                <li><a href="#">Our services</a></li>
+                                <li><a href="#">Our projects</a></li>
+                                <li><a href="#">Our blogs</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="link-content">
+                            <h3>
+                                links
+                            </h3>
+                            <ul>
+                                <li><a href="#">Home Pest Control</a></li>
+                                <li><a href="#">Commercial Pest</a></li>
+                                <li><a href="#">Termite & Rodent</a></li>
+                                <li><a href="#">Eco-Friendly Pest</a></li>
+                                <li><a href="#">Wildlife Removal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-5">
+                        <div class="contact-content">
+                            <h3>
+                                contact
+                            </h3>
+                            <div class="mail-contact">
+                                <i class="fas fa-envelope"></i>
+                                <a href="#">info@domainname.com9</a>
+                            </div>
+                            <div class="tel-contact">
+                                <i class="fas fa-phone"></i>
+                                <a href="#">+91 123 456 789</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="footer-copyright">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="assets/images/footer-logo.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="social-link">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright-text">
+                                Copyright © 2025 All Rights Reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <!-- mobile menu -->
+    <script src="assets/js/mobile_menu.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                // Màn hình >= 576px: 2 items
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                // Màn hình >= 992px: 4 items
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <script src="assets/js/back_on_top.js"></script>
+    <script src="assets/js/cursor_dot.js"></script>
+</body>
+
+</html>

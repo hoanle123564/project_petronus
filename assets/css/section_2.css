@@ -1,0 +1,124 @@
+.section-2 .service-item {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid var(--divider-color);
+    border-bottom: 1px solid var(--divider-color);
+    padding: 40px 2.604vw;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.section-2 .service-item .service-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-right: 20px;
+}
+
+.section-2 .service-item .service-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transform: scale(0);
+    transition: transform 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.section-2 .service-item:hover .service-icon::before {
+    transform: scale(1);
+}
+
+.section-2 .service-item .service-icon img {
+    max-width: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-2 .service-item .service-content {
+    width: calc(100% - 80px);
+
+}
+
+.section-2 .service-item .service-content h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.section-2 .service-item .btn-read {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Mũi tên trong hình tròn */
+.section-2 .service-item .btn-read::after {
+    content: '';
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    background-image: url(../images/arrow-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px auto;
+    font-weight: 700;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect CHỈ khi hover vào btn-read */
+.section-2 .service-item .btn-read:hover {
+    color: var(--primary-color);
+}
+
+.section-2 .service-item .btn-read:hover::after {
+    background-color: var(--primary-color);
+    transform: translateX(3px);
+}
+
+
+/* responsive    */
+
+@media (max-width: 984px) {
+    .section-2 .service-item {
+        width: 50%;
+    }
+
+    .section-2 .service-item .swiper-slide {
+        display: flex;
+    }
+}
+
+@media (max-width: 769px) {
+    .section-2 .service-item {
+        width: 100%;
+    }
+}
+
+/* Khi Swiper chưa được khởi tạo (màn hình > 576px) */
+.section-2 .service-box:not(.swiper-initialized) .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
