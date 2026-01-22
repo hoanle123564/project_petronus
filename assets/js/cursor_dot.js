@@ -32,19 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     animateCursor();
 
-    // Add hover effect for interactive elements
-    const interactiveElements = document.querySelectorAll('a, button, .btn-read, .btn-book, .btn-primary, .service-item, .nav-item');
-
-    interactiveElements.forEach(function (el) {
-        el.addEventListener('mouseenter', function () {
-            cursorDot.classList.add('cursor-hover');
-        });
-
-        el.addEventListener('mouseleave', function () {
-            cursorDot.classList.remove('cursor-hover');
-        });
-    });
-
     // Hide cursor dot when mouse leaves the window
     document.addEventListener('mouseleave', function () {
         cursorDot.style.opacity = '0';
