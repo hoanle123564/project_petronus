@@ -1,0 +1,64 @@
+.section-11 {
+    background-image: url("../images/cta-box-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0 0;
+    position: relative;
+}
+
+.section-11:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.section-11 .box-img {
+    position: relative;
+    z-index: 1;
+}
+
+.section-11 .cta-box-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px 0;
+    height: calc(100% - 30px);
+    align-content: center;
+}
+
+
+
+.section-11 .cta-box-content .sec-title h2 {
+    color: var(--white-color);
+}
+
+.section-11 .cta-box-content .cta-body ul {
+    color: var(--white-color);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-11 .cta-box-content .cta-body ul li {
+    margin-bottom: 20px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.section-11 .cta-box-content .cta-body ul li i {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 12px;
+}

@@ -1,0 +1,10 @@
+.section-9 {
+    background-color: var(--primary-color);
+    padding: 100px 0;
+}
+
+.section-9 .answers-images {
+    background-image: url(../images/about-us-dot-img.png) no-repeat;
+    background-position: left 187px bottom 46px;
+    position: relative;
+}

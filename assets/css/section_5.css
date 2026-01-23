@@ -4,3 +4,226 @@
     background-position: left -30px bottom -37px;
     background-repeat: no-repeat;
 }
+
+/* Feature Content Wrapper (Left Side) */
+
+.section-5 .section-title p {
+    color: var(--text-color);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Feature List - 2x2 Grid */
+.section-5 .feature-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Feature Item */
+.section-5 .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Service Icon */
+.section-5 .service-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.section-5 .service-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.section-5 .service-icon img {
+    max-width: 30px;
+    position: relative;
+    z-index: 2;
+    transition: filter 0.4s ease;
+}
+
+.section-5 .feature-item:hover .service-icon::before {
+    transform: scale(1);
+}
+
+/* Feature Item Content */
+.section-5 .feature-item-content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.section-5 .feature-item-content p {
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.section-5 .feature-item:hover .feature-item-content h4 {
+    color: var(--accent-color);
+}
+
+/* Feature Image Wrapper (Right Side) */
+.section-5 .feature-image-wrapper {
+    position: relative;
+    padding: 0 0 10px 35px;
+}
+
+.section-5 .feature-image {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.section-5 .feature-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* Contact Badge */
+.section-5 .contact-badge {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 140px;
+    height: 140px;
+    z-index: 10;
+}
+
+
+
+/* Rotating  */
+.section-5 .icon-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 15s linear infinite;
+}
+
+@keyframes rotateText {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+    .section-5 .feature-content-wrapper {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-5 {
+        padding: 80px 0;
+    }
+
+    .section-5 .feature-content-wrapper {
+        margin-bottom: 60px;
+    }
+
+    .section-5 .contact-badge {
+        width: 120px;
+        height: 120px;
+        bottom: -20px;
+        right: 20px;
+    }
+
+    .section-5 .badge-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .section-5 .badge-icon i {
+        font-size: 20px;
+    }
+
+    .section-5 .icon-badge text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-5 {
+        padding: 60px 0;
+    }
+
+    .section-5 .feature-list {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .section-5 .section-title h2 {
+        font-size: 32px;
+    }
+
+    .section-5 .contact-badge {
+        width: 100px;
+        height: 100px;
+        bottom: -15px;
+        right: 15px;
+    }
+
+    .section-5 .badge-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .section-5 .badge-icon i {
+        font-size: 18px;
+    }
+
+    .section-5 .icon-badge text {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 575px) {
+    .section-5 .section-title h2 {
+        font-size: 28px;
+    }
+
+    .section-5 .feature-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .section-5 .service-icon {
+        margin-bottom: 10px;
+    }
+}
