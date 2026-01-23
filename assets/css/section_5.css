@@ -149,6 +149,7 @@
 @media (max-width: 991px) {
     .section-5 {
         padding: 80px 0;
+        background-size: 160px;
     }
 
     .section-5 .feature-content-wrapper {
@@ -179,6 +180,7 @@
 @media (max-width: 767px) {
     .section-5 {
         padding: 60px 0;
+        background-size: 120px;
     }
 
     .section-5 .feature-list {
@@ -213,6 +215,11 @@
 }
 
 @media (max-width: 575px) {
+    .section-5 {
+        background-size: 80px;
+        background-position: left -10px bottom -10px;
+    }
+
     .section-5 .section-title h2 {
         font-size: 28px;
     }

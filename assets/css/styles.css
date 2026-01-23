@@ -84,6 +84,7 @@ a {
     background-color: var(--theme-color-white);
     transition: all 0.4s ease-in-out;
     z-index: -1;
+    opacity: 0;
 }
 
 .hero-btn .btn-book:hover::before {
@@ -93,6 +94,7 @@ a {
 .hero-btn .btn-book.btn-highlighted:hover::after {
     left: 0;
     right: 0;
+    opacity: 1;
 }
 
 .hero-btn .btn-book.btn-highlighted:hover {
@@ -184,6 +186,7 @@ a {
     background-size: 24px auto;
     transform: translateY(-50%) rotate(-45deg);
     transition: all 0.3s ease-in-out;
+
 }
 
 .box-btn .btn-primary.btn-highlighted::after {
@@ -197,11 +200,13 @@ a {
     background-color: var(--primary-color);
     transition: all 0.4s ease-in-out;
     z-index: -1;
+    opacity: 0;
 }
 
 .box-btn .btn-primary.btn-highlighted:hover::after {
     left: 0;
     right: 0;
+    opacity: 1;
 }
 
 .box-btn .btn-primary:hover::before {
@@ -367,4 +372,94 @@ h2 span {
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
+}
+
+/* ==================== Responsive Section Title ========================*/
+@media (max-width: 1200px) {
+    h2 {
+        font-size: 38px;
+    }
+
+    .section-title h2,
+    .section-title-2 h2 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 992px) {
+    h2 {
+        font-size: 32px;
+    }
+
+    .section-title h2,
+    .section-title-2 h2 {
+        font-size: 32px;
+    }
+
+    .section-title h3,
+    .section-title-2 h3 {
+        font-size: 13px;
+        padding: 4px 18px 4px 30px;
+    }
+
+    .section-title p,
+    .section-title-2 p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    .section-title h2,
+    .section-title-2 h2 {
+        font-size: 28px;
+    }
+
+    .section-title h3,
+    .section-title-2 h3 {
+        font-size: 12px;
+        padding: 4px 16px 4px 26px;
+    }
+
+    .section-title h3::before,
+    .section-title-2 h3::before {
+        width: 5px;
+        height: 5px;
+    }
+
+    .section-title p,
+    .section-title-2 p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .section-title h2,
+    .section-title-2 h2 {
+        font-size: 24px;
+    }
+
+    .section-title h3,
+    .section-title-2 h3 {
+        font-size: 11px;
+        padding: 3px 14px 3px 22px;
+    }
+
+    .section-title h3::before,
+    .section-title-2 h3::before {
+        width: 4px;
+        height: 4px;
+    }
+
+    .section-title p,
+    .section-title-2 p {
+        font-size: 13px;
+    }
 }

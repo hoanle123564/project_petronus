@@ -42,13 +42,13 @@ var swiper = new Swiper(".swiperSection7", {
     spaceBetween: 10,
     breakpoints: {
         768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 20,
         },
-        576: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-        }
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
     },
 });
 
@@ -77,4 +77,10 @@ var swiperSection10 = new Swiper(".swiperSection10", {
             spaceBetween: 30,
         }
     },
+});
+
+// Section 6 Project Swiper (Mobile only)
+var projectSwiper = new Swiper(".project-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
 });

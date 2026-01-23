@@ -99,10 +99,6 @@
     padding-top: 25px;
 }
 
-.section-7 .price-item .price-footer .btn-primary {
-    padding-right: 60px;
-}
-
 /* Featured Price Item - Dark body */
 .section-7 .price-item.price-item-featured {
     background-color: var(--primary-color);
@@ -139,9 +135,26 @@
 /* Responsive Styles      */
 /* ====================== */
 
-
+@media (max-width: 1200px) {
+    .section-7 {
+        background-size: 180px;
+    }
+}
 
 @media (max-width: 992px) {
+    .section-7 {
+        background-size: 150px;
+        overflow: hidden;
+    }
+
+    .section-7 .container {
+        overflow: hidden;
+    }
+
+    .section-7 .pricing-box {
+        overflow: hidden;
+    }
+
     .section-7 .pricing-box:not(.swiper-initialized) .swiper-wrapper {
         flex-wrap: wrap;
     }
@@ -150,11 +163,38 @@
         flex-wrap: wrap;
         gap: 30px;
     }
+
+    /* Smaller buttons on tablet */
+    .section-7 .price-footer .btn-primary,
+    .section-7 .price-footer .btn-book {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .section-7 .price-footer .btn-primary::before,
+    .section-7 .price-footer .btn-book::before {
+        width: 35px;
+        height: 35px;
+        right: -35px;
+        background-size: 18px auto;
+    }
 }
 
 @media (max-width: 768px) {
     .section-7 {
         padding: 60px 0;
+        background-size: 100px;
+        background-position: right 5px bottom 5px;
+        overflow: hidden;
+    }
+
+    .section-7 .container {
+        overflow: hidden;
+    }
+
+    .section-7 .pricing-box {
+        overflow: hidden;
+        padding: 0 10px;
     }
 
     .section-7 .pricing-benefits {
@@ -168,7 +208,7 @@
 
     /* Swiper styles for mobile */
     .section-7 .pricing-box.swiper-initialized {
-        overflow: visible;
+        overflow: hidden;
     }
 
     .section-7 .pricing-box.swiper-initialized .swiper-wrapper {
@@ -180,18 +220,66 @@
         width: 100%;
         max-width: none;
     }
+
+    /* Smaller buttons on tablet */
+    .section-7 .price-footer .btn-primary,
+    .section-7 .price-footer .btn-book {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .section-7 .price-footer .btn-primary::before,
+    .section-7 .price-footer .btn-book::before {
+        width: 40px;
+        height: 40px;
+        right: -40px;
+        background-size: 18px auto;
+    }
 }
 
 @media (max-width: 576px) {
+    .section-7 {
+        background-size: 80px;
+    }
+
+    .section-7 .price-item {
+        padding: 20px;
+    }
+
+    .section-7 .price-item .price-header {
+        margin: -20px -20px 20px -20px;
+        padding: 20px;
+    }
+
     .section-7 .price-item .price-header h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .section-7 .price-item .price-header h3 {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .section-7 .price-item .price-body ul li {
+        font-size: 13px;
+        padding: 12px 0;
     }
 
     .section-7 .benefit-item {
         font-size: 14px;
+    }
+
+    /* Even smaller buttons on mobile */
+    .section-7 .price-footer .btn-primary,
+    .section-7 .price-footer .btn-book {
+        font-size: 13px;
+        padding: 10px 18px;
+    }
+
+    .section-7 .price-footer .btn-primary::before,
+    .section-7 .price-footer .btn-book::before {
+        width: 36px;
+        height: 36px;
+        right: -36px;
+        background-size: 16px auto;
     }
 }

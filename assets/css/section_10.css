@@ -12,6 +12,11 @@
     padding-bottom: 60px;
 }
 
+.section-10 .swiper-slide {
+    height: auto;
+    display: flex;
+}
+
 /* Testimonial Item Card */
 .section-10 .testimonial-item {
     background-color: var(--white-color);
@@ -19,6 +24,9 @@
     padding: 30px;
     box-shadow: 0px 0px 30px 0px rgba(0, 47, 71, 0.1);
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* Testimonial Header - Avatar & Info */
@@ -69,6 +77,10 @@
 }
 
 /* Testimonial Content */
+.section-10 .testimonial-content {
+    flex: 1;
+}
+
 .section-10 .testimonial-content p {
     font-size: 15px;
     color: var(--text-color);
