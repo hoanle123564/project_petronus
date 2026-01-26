@@ -1,10 +1,25 @@
+/* Swiper Section 1 - Equal height slides */
+.swiper-section-1 {
+    width: 100%;
+}
+
+.swiper-section-1 .swiper-wrapper {
+    align-items: stretch;
+}
+
+.swiper-section-1 .swiper-slide {
+    height: auto;
+}
+
 .background-section-1 {
     position: relative;
     background: url(../images/hero-bg.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 180px 0 0;
-    /* Account for fixed header height */
+    display: flex;
+    align-items: center;
+    min-height: 100%;
 }
 
 /* Slide 2 background */
@@ -32,6 +47,7 @@
     z-index: 2;
     color: #fff;
     margin-bottom: 40px;
+    max-width: 100%;
 }
 
 .background-section-1 .hero-content h3 {
@@ -66,6 +82,8 @@
     line-height: 1.1em;
     letter-spacing: -0.02em;
     font-weight: 700;
+    max-height: none;
+    overflow: visible;
 }
 
 .background-section-1 .hero-content .hero-btn {
@@ -157,8 +175,9 @@
 
 @media (max-width: 992px) {
     .background-section-1 {
-        padding: 160px 0 0;
+        padding: 160px 0 60px;
         /* Account for fixed header height */
+        min-height: 100vh;
     }
 
     .background-section-1 .hero-content h1 {
@@ -200,7 +219,8 @@
 
 @media (max-width: 768px) {
     .background-section-1 {
-        padding: 180px 0 0;
+        padding: 150px 0 50px;
+        min-height: 100vh;
     }
 
     .background-section-1 .hero-content {
@@ -251,7 +271,8 @@
 
 @media (max-width: 576px) {
     .background-section-1 {
-        padding-top: 160px;
+        padding: 140px 0 40px;
+        min-height: 100vh;
     }
 
     .background-section-1 .hero-content h1 {
