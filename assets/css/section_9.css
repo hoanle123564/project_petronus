@@ -148,6 +148,8 @@
 
     .section-9 .answers-image-2 {
         width: 200px;
+        opacity: 0;
+        visibility: hidden;
     }
 
     .section-9 .answers-image-3 {

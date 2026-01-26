@@ -1,3 +1,15 @@
+// Section 1 Hero Slider
+var swiperSection1 = new Swiper(".swiper-section-1", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    speed: 800,
+});
+
 var swiperSection2 = null;
 var swiperSection7 = null;
 

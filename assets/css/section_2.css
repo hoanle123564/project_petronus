@@ -101,7 +101,7 @@
 
 /* responsive    */
 
-@media (max-width: 984px) {
+@media (max-width: 990px) {
     .section-2 .service-item {
         width: 50%;
     }
