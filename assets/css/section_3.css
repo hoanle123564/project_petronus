@@ -18,6 +18,7 @@
 
 .section-3 .about-image-1 img {
     border-radius: 999px;
+    width: 100%;
 
 }
 
@@ -281,7 +282,6 @@
     .section-3 .about-image {
         padding: 0 20px;
         margin-bottom: 30px;
-        max-width: 280px;
     }
 
     .section-3 .about-circle-image-1 {
@@ -320,7 +320,7 @@
 
     .section-3 .about-image {
         padding: 0 15px;
-        max-width: 220px;
+        max-width: 300px;
     }
 
     .section-3 .about-circle-image-1 {
@@ -339,8 +339,8 @@
 
     .section-3 .about-circle-image-1 img,
     .section-3 .about-circle-image-2 img {
-        width: 55px;
-        height: 55px;
+        width: 80px;
+        height: 80px;
     }
 
     .section-3 .about-us-content h2 {
@@ -390,4 +390,107 @@
         height: auto;
 
     }
+}
+
+/* ==================== Video Modal Overlay ========================*/
+.video-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.video-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.video-modal-container {
+    position: relative;
+    width: 60%;
+    background-color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.video-modal-overlay.active .video-modal-container {
+    transform: scale(1);
+}
+
+.video-modal-close {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid var(--white-color);
+    border-radius: 50%;
+    color: var(--white-color);
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    z-index: 10001;
+}
+
+.video-modal-close:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: rotate(90deg);
+}
+
+.video-modal-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-modal-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Video Modal */
+@media (max-width: 768px) {
+    .video-modal-container {
+        width: 95%;
+    }
+
+    .video-modal-close {
+        top: -40px;
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .video-modal-close {
+        top: -38px;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
 }
