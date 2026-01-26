@@ -1,12 +1,20 @@
-.section-1 {
+.background-section-1 {
     position: relative;
     background: url(../images/hero-bg.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 140px 0 0;
+    padding: 180px 0 0;
+    /* Account for fixed header height */
 }
 
-.section-1::before {
+/* Slide 2 background */
+.background-section-1-slide-2 {
+    background: url(../images/project-6.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.background-section-1::before {
     content: '';
     position: absolute;
     top: 0;
@@ -19,14 +27,14 @@
     z-index: 1;
 }
 
-.section-1 .hero-content {
+.background-section-1 .hero-content {
     position: relative;
     z-index: 2;
     color: #fff;
     margin-bottom: 40px;
 }
 
-.section-1 .hero-content h3 {
+.background-section-1 .hero-content h3 {
     display: inline-block;
     color: var(--theme-color-green);
     position: relative;
@@ -40,7 +48,7 @@
     text-transform: capitalize;
 }
 
-.section-1 .hero-content h3::before {
+.background-section-1 .hero-content h3::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -53,20 +61,20 @@
 
 }
 
-.section-1 .hero-content h1 {
+.background-section-1 .hero-content h1 {
     font-size: 60px;
     line-height: 1.1em;
     letter-spacing: -0.02em;
     font-weight: 700;
 }
 
-.section-1 .hero-content .hero-btn {
+.background-section-1 .hero-content .hero-btn {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.section-1 .hero-content .hero-btn .btn-book {
+.background-section-1 .hero-content .hero-btn .btn-book {
     color: var(--theme-color-white);
     display: inline-block;
     font-size: 18px;
@@ -79,7 +87,7 @@
     transition: color 0.4s ease-in-out;
 }
 
-.section-1 .hero-content .hero-btn .btn-book::before {
+.background-section-1 .hero-content .hero-btn .btn-book::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -96,7 +104,7 @@
     transition: all 0.3 ease-in-out;
 }
 
-.section-1 .hero-content .hero-btn .btn-book.btn-highlighted::after {
+.background-section-1 .hero-content .hero-btn .btn-book.btn-highlighted::after {
     content: "";
     position: absolute;
     top: 0;
@@ -109,32 +117,32 @@
     z-index: -1;
 }
 
-.section-1 .hero-content .hero-btn .btn-book:hover::before {
+.background-section-1 .hero-content .hero-btn .btn-book:hover::before {
     transform: translateY(-50%) rotate(0);
 }
 
-.section-1 .hero-content .hero-btn .btn-book.btn-highlighted:hover::after {
+.background-section-1 .hero-content .hero-btn .btn-book.btn-highlighted:hover::after {
     left: 0;
     right: 0;
 }
 
-.section-1 .hero-content .hero-btn .btn-book.btn-highlighted:hover {
+.background-section-1 .hero-content .hero-btn .btn-book.btn-highlighted:hover {
     color: var(--primary-color);
 }
 
-.section-1 .hero-content .hero-btn .btn-view {
+.background-section-1 .hero-content .hero-btn .btn-view {
     color: var(--theme-color-white);
     text-decoration: underline;
     font-weight: 700;
     margin-left: 20%;
 }
 
-.section-1 .image {
+.background-section-1 .image {
     max-width: 100%;
     object-fit: cover;
 }
 
-.section-1 .image img {
+.background-section-1 .image img {
     width: 100%;
     height: auto;
     transition: all 0.3s ease-in-out;
@@ -142,47 +150,48 @@
 
 /* Responsive for Section 1 */
 @media (max-width: 1200px) {
-    .section-1 .hero-content h1 {
+    .background-section-1 .hero-content h1 {
         font-size: 50px;
     }
 }
 
 @media (max-width: 992px) {
-    .section-1 {
-        padding: 100px 0 0;
+    .background-section-1 {
+        padding: 160px 0 0;
+        /* Account for fixed header height */
     }
 
-    .section-1 .hero-content h1 {
+    .background-section-1 .hero-content h1 {
         font-size: 42px;
     }
 
-    .section-1 .hero-content h3 {
+    .background-section-1 .hero-content h3 {
         font-size: 13px;
         padding: 4px 18px 4px 32px;
     }
 
-    .section-1 .hero-content p {
+    .background-section-1 .hero-content p {
         font-size: 15px;
     }
 
-    .section-1 .hero-content .hero-btn .btn-book {
+    .background-section-1 .hero-content .hero-btn .btn-book {
         font-size: 16px;
         padding: 12px 20px;
     }
 
-    .section-1 .hero-content .hero-btn .btn-book::before {
+    .background-section-1 .hero-content .hero-btn .btn-book::before {
         width: 45px;
         height: 45px;
         right: -45px;
         background-size: 20px auto;
     }
 
-    .section-1 .hero-content .hero-btn .btn-view {
+    .background-section-1 .hero-content .hero-btn .btn-view {
         margin-left: 15%;
         font-size: 15px;
     }
 
-    .section-1 .image img {
+    .background-section-1 .image img {
         max-width: 80%;
         margin: 0 auto;
         display: block;
@@ -190,101 +199,103 @@
 }
 
 @media (max-width: 768px) {
+    .background-section-1 {
+        padding: 180px 0 0;
+    }
 
-
-    .section-1 .hero-content {
+    .background-section-1 .hero-content {
         text-align: center;
         margin-bottom: 30px;
     }
 
-    .section-1 .hero-content h1 {
+    .background-section-1 .hero-content h1 {
         font-size: 34px;
     }
 
-    .section-1 .hero-content h3 {
+    .background-section-1 .hero-content h3 {
         font-size: 12px;
         padding: 4px 16px 4px 28px;
     }
 
-    .section-1 .hero-content p {
+    .background-section-1 .hero-content p {
         font-size: 14px;
     }
 
-    .section-1 .hero-content .hero-btn {
+    .background-section-1 .hero-content .hero-btn {
         justify-content: center;
         flex-wrap: wrap;
         gap: 15px;
     }
 
-    .section-1 .hero-content .hero-btn .btn-book {
+    .background-section-1 .hero-content .hero-btn .btn-book {
         font-size: 14px;
         padding: 10px 18px;
     }
 
-    .section-1 .hero-content .hero-btn .btn-book::before {
+    .background-section-1 .hero-content .hero-btn .btn-book::before {
         width: 40px;
         height: 40px;
         right: -40px;
         background-size: 18px auto;
     }
 
-    .section-1 .hero-content .hero-btn .btn-view {
+    .background-section-1 .hero-content .hero-btn .btn-view {
         margin-left: 10%;
         font-size: 14px;
     }
 
-    .section-1 .image img {
+    .background-section-1 .image img {
         max-width: 70%;
     }
 }
 
 @media (max-width: 576px) {
-    .section-1 {
-        padding-top: 60px;
+    .background-section-1 {
+        padding-top: 160px;
     }
 
-    .section-1 .hero-content h1 {
+    .background-section-1 .hero-content h1 {
         font-size: 28px;
     }
 
-    .section-1 .hero-content h3 {
+    .background-section-1 .hero-content h3 {
         font-size: 11px;
         padding: 3px 14px 3px 24px;
     }
 
-    .section-1 .hero-content h3::before {
+    .background-section-1 .hero-content h3::before {
         width: 4px;
         height: 4px;
     }
 
-    .section-1 .hero-content p {
+    .background-section-1 .hero-content p {
         font-size: 13px;
     }
 
-    .section-1 .hero-content .hero-btn {
+    .background-section-1 .hero-content .hero-btn {
         flex-direction: column;
         align-items: center;
     }
 
-    .section-1 .hero-content .hero-btn .btn-book {
+    .background-section-1 .hero-content .hero-btn .btn-book {
         font-size: 13px;
         padding: 10px 16px;
     }
 
-    .section-1 .hero-content .hero-btn .btn-book::before {
+    .background-section-1 .hero-content .hero-btn .btn-book::before {
         width: 36px;
         height: 36px;
         right: -36px;
         background-size: 16px auto;
     }
 
-    .section-1 .hero-content .hero-btn .btn-view {
+    .background-section-1 .hero-content .hero-btn .btn-view {
         margin-left: 0;
         margin-top: 10px;
         font-size: 13px;
     }
 
-    .section-1 .image img {
+    .background-section-1 .image img {
         max-width: 90%;
     }
 }

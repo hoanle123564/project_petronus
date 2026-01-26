@@ -1,3 +1,66 @@
+/* ==================== Top Bar ==================== */
+.top-bar {
+    background-color: var(--accent-color);
+    padding: 10px 0;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.top-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--white-color);
+    font-size: 14px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.top-bar-item:hover {
+    opacity: 0.8;
+    color: var(--white-color);
+}
+
+.top-bar-item i {
+    font-size: 14px;
+}
+
+.top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-bar-right .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--white-color);
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.top-bar-right .social-icon:hover {
+    background-color: var(--white-color);
+    color: var(--accent-color);
+}
+
+/* ==================== Header ==================== */
 header {
     position: fixed;
     top: 0;
@@ -13,7 +76,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 15px 0;
     box-shadow: 0 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -361,5 +424,32 @@ header {
     .header .sub-menu .sub-menu-item a {
         padding: 10px 15px 10px 30px;
         font-size: 13px;
+    }
+}
+
+/* ==================== Top Bar Responsive ==================== */
+@media screen and (max-width: 765px) {
+    .top-bar {
+        padding: 10px 0;
+    }
+
+    .top-bar-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-bar-left {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .top-bar-item {
+        font-size: 13px;
+    }
+
+    .top-bar-right {
+        display: none;
     }
 }
