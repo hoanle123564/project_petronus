@@ -172,18 +172,8 @@
         background-size: 80px;
     }
 
-    .section-9 .answers-image-1 {
-        width: 240px;
-    }
-
-    .section-9 .answers-image-2 {
-        width: 190px;
-        top: 15%;
-    }
-
     .section-9 .answers-image-3 {
-        width: 240px;
-        bottom: 5%;
+        width: 290px;
     }
 
     .section-9 .faq-content {
@@ -191,7 +181,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .section-9 {
         padding: 60px 0;
     }
@@ -204,20 +194,18 @@
         height: 400px;
         margin-bottom: 40px;
         background-size: 60px;
+        width: 0%;
+        align-items: center;
+        margin: 0 auto;
     }
 
     .section-9 .answers-image-1 {
-        width: 180px;
-    }
-
-    .section-9 .answers-image-2 {
-        width: 150px;
-        top: 10%;
+        width: 200px;
     }
 
     .section-9 .answers-image-3 {
-        width: 200px;
-        bottom: 5%;
+        width: 230px;
+        bottom: -6%;
     }
 
     .section-9 .accordion-button {

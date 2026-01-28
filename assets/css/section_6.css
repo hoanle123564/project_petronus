@@ -13,7 +13,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px 30px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -40,6 +39,8 @@
     font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease;
+    padding: 10px 20px;
+    margin: 0 10px;
 }
 
 .section-6 .project-nav a:hover,
@@ -148,7 +149,7 @@
 }
 
 /* Responsive */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .section-6 {
         overflow: hidden;
     }
@@ -165,7 +166,6 @@
         font-size: 14px;
     }
 
-    /* Smaller buttons on tablet */
     .section-6 .section-footer .box-btn .btn-primary {
         font-size: 14px;
         padding: 10px 15px;
@@ -177,15 +177,11 @@
         right: -35px;
         background-size: 18px auto;
     }
-}
+} */
 
-@media (max-width: 767px) {
+/* @media (max-width: 768px) {
     .section-6 {
         padding: 60px 0;
-    }
-
-    .section-6 .project-grid {
-        display: none;
     }
 
     .section-6 .project-swiper {
@@ -193,7 +189,10 @@
     }
 
     .section-6 .project-nav ul {
-        gap: 8px 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px 10px;
+        text-align: center;
     }
 
     .section-6 .project-nav li:not(:last-child)::after {
@@ -202,13 +201,13 @@
 
     .section-6 .project-nav a {
         font-size: 13px;
+        display: block;
     }
 
     .section-6 .project-content h3 {
         font-size: 18px;
     }
 
-    /* Even smaller buttons on small tablet/mobile */
     .section-6 .section-footer .box-btn .btn-primary {
         font-size: 14px;
         padding: 10px 15px;
@@ -220,9 +219,13 @@
         right: -35px;
         background-size: 18px auto;
     }
-}
+} */
 
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
+    .section-6 .project-grid {
+        display: none;
+    }
+
     .section-6 .section-footer .box-btn .btn-primary {
         font-size: 12px;
         padding: 8px 12px;
@@ -234,4 +237,4 @@
         right: -30px;
         background-size: 15px auto;
     }
-}
+} */

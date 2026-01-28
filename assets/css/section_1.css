@@ -9,6 +9,7 @@
 
 .swiper-section-1 .swiper-slide {
     height: auto;
+    display: flex;
 }
 
 .background-section-1 {
@@ -20,6 +21,8 @@
     display: flex;
     align-items: center;
     min-height: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 /* Slide 2 background */
@@ -60,7 +63,7 @@
     border-radius: 24px;
     padding: 4px 20px 4px 36px;
     margin-bottom: 15px;
-    line-height: 1.6em;
+    line-height: 22.4px;
     text-transform: capitalize;
 }
 
@@ -79,8 +82,8 @@
 
 .background-section-1 .hero-content h1 {
     font-size: 60px;
-    line-height: 1.1em;
-    letter-spacing: -0.02em;
+    line-height: 66px;
+    letter-spacing: -1.2px;
     font-weight: 700;
     max-height: none;
     overflow: visible;

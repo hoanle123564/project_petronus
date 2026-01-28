@@ -1,5 +1,4 @@
 .section-2 .service-item {
-    width: 25%;
     display: flex;
     align-items: center;
     border-right: 1px solid var(--divider-color);
@@ -7,6 +6,7 @@
     padding: 40px 2.604vw;
     flex-wrap: wrap;
     overflow: hidden;
+    height: 100%;
 }
 
 .section-2 .service-item .service-icon {
@@ -99,26 +99,27 @@
 }
 
 
-/* responsive    */
-
-@media (max-width: 990px) {
-    .section-2 .service-item {
-        width: 50%;
-    }
-
+/* responsive - borders only (width controlled by grid) */
+/* @media (max-width: 990px) {
     .section-2 .service-item .swiper-slide {
         display: flex;
     }
+} */
+
+/* Khi Swiper chưa được khởi tạo - sử dụng CSS Grid để đảm bảo chiều cao bằng nhau */
+/* .section-2 .service-box:not(.swiper-initialized) .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-@media (max-width: 769px) {
-    .section-2 .service-item {
-        width: 100%;
+@media (max-width: 990px) {
+    .section-2 .service-box:not(.swiper-initialized) .swiper-wrapper {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Khi Swiper chưa được khởi tạo (màn hình > 576px) */
-.section-2 .service-box:not(.swiper-initialized) .swiper-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
+@media (max-width: 768px) {
+    .section-2 .service-box:not(.swiper-initialized) .swiper-wrapper {
+        grid-template-columns: 1fr;
+    }
+} */

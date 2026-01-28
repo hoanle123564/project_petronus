@@ -11,24 +11,34 @@ var swiperSection1 = new Swiper(".swiper-section-1", {
   speed: 800,
 });
 
-var swiperSection2 = null;
-var swiperSection7 = null;
-
-function initSwiper() {
-  // Section 2 Swiper
-  if (window.innerWidth <= 769) {
-    if (!swiperSection2) {
-      swiperSection2 = new Swiper(".swiperSection2");
-    }
-  } else {
-    if (swiperSection2) {
-      swiperSection2.destroy(true, true);
-      swiperSection2 = null;
-    }
-  }
-}
-initSwiper();
-window.addEventListener("resize", initSwiper);
+// Section 2 Hero Slider
+var swiperSection2 = new Swiper("#swiperSection2 .swiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  speed: 800,
+  breakpoints: {
+    // Màn hình >= 576px: 2 items
+    375: {
+      slidesPerView: 1.5,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    // Màn hình >= 992px: 4 items
+    768: {
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
+      spaceBetween: 0,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
+  },
+});
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
@@ -73,20 +83,20 @@ var swiperSection10 = new Swiper(".swiperSection10", {
     clickable: true,
   },
   breakpoints: {
-    // >= 768px: 1 slide (mobile)
-    768: {
+    // >= 576px: 1 slide (mobile)
+    576: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
-    // >= 990px: 2 slides (tablet)
-    990: {
+    // >= 768px: 2 slides (tablet)
+    768: {
       slidesPerView: 2,
       spaceBetween: 25,
     },
     // >= 1200px: 3 slides (desktop)
     1200: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
   },
 });
@@ -95,4 +105,37 @@ var swiperSection10 = new Swiper(".swiperSection10", {
 var projectSwiper = new Swiper(".project-swiper", {
   slidesPerView: 1,
   spaceBetween: 20,
+});
+
+// Blog Section Swiper
+var swiperBlog = new Swiper(".swiperBlog", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+  breakpoints: {
+    // >= 992px: 2 columns, 3 rows
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+      grid: {
+        rows: 3,
+        fill: 'row',
+      },
+    },
+    // >= 1200px: 3 columns, 2 rows
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
+    },
+  },
 });

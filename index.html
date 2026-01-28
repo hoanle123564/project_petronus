@@ -29,6 +29,15 @@
     <link rel="stylesheet" href="./assets/css/section_10.css">
     <link rel="stylesheet" href="./assets/css/section_11.css">
     <link rel="stylesheet" href="./assets/css/section_12.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+        rel="stylesheet">
+    <!-- fancyapp  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
 </head>
 
 <body>
@@ -61,7 +70,7 @@
 
         <nav class="header">
             <div class="container d-flex justify-content-between">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="./assets/images/logo.svg" alt="logo" width="200" height="40">
                 </a>
 
@@ -73,7 +82,7 @@
                 <div class="nav-menu-wrapper" id="navMenuWrapper">
                     <!-- Mobile header (visible only on mobile) -->
                     <div class="mobile-menu-header">
-                        <a href="#" class="mobile-logo">
+                        <a href="index.html" class="mobile-logo">
                             <img src="./assets/images/logo.svg" alt="logo" width="150" height="40">
                         </a>
                         <button class="close-menu" id="closeMenu">
@@ -83,9 +92,9 @@
 
                     <ul class="nav-menu">
                         <li class="nav-item has-submenu">
-                            <a href="#">Home <i class="fas fa-chevron-down"></i></a>
+                            <a href="index.html">Home <i class="fas fa-chevron-down"></i></a>
                             <ul class="sub-menu">
-                                <li class="sub-menu-item"><a href="#">Home - Main</a></li>
+                                <li class="sub-menu-item"><a href="index.html">Home - Main</a></li>
                                 <li class="sub-menu-item"><a href="#">Home - Menu</a></li>
                                 <li class="sub-menu-item"><a href="#">Home - Slider</a></li>
                             </ul>
@@ -99,17 +108,13 @@
                             </ul>
                         </li>
                         <li class="nav-item has-submenu">
-                            <a href="#">Blog <i class="fas fa-chevron-down"></i></a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu-item"><a href="#">Blog Details</a></li>
-                                <li class="sub-menu-item"><a href="#">Latest News</a></li>
-                            </ul>
+                            <a href="blog.html">Blog </a>
                         </li>
                         <li class="nav-item has-submenu">
                             <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-item"><a href="#">Service Details</a></li>
-                                <li class="sub-menu-item"><a href="#">Blog Details</a></li>
+                                <li class="sub-menu-item"><a href="blog_detail.html">Blog Details</a></li>
                                 <li class="sub-menu-item"><a href="#">Projects</a></li>
                                 <li class="sub-menu-item"><a href="#">Project Details</a></li>
                                 <li class="sub-menu-item"><a href="#">Team</a></li>
@@ -225,62 +230,67 @@
         </section>
 
         <!-- section 2 -->
-        <section class="section-2">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="service-box swiper swiperSection2 d-flex flex-wrap">
-                        <div class="swiper-wrapper">
-                            <!-- item 1 -->
-                            <div class="service-item swiper-slide" data-aos="fade-up">
-                                <div class="service-icon">
-                                    <img src="./assets/images/icon-best-service-1.svg" alt="service-icon" width="55"
-                                        height="55">
-                                </div>
-                                <div class="service-content">
-                                    <h3>Comprehensive Coverage</h3>
-                                    <a href="#" class="btn-read">Read More</a>
-                                </div>
+        <section class="section-2" id="swiperSection2">
+            <div class="service-box swiper ">
+                <div class="swiper-wrapper">
+                    <!-- item 1 -->
+                    <div class="swiper-slide h-auto" data-aos="fade-up">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <img src="./assets/images/icon-best-service-1.svg" alt="service-icon" width="55"
+                                    height="55">
                             </div>
-
-                            <!-- item 2 -->
-                            <div class="service-item swiper-slide" data-aos="fade-up" data-aos-delay="100">
-                                <div class="service-icon">
-                                    <img src="./assets/images/icon-best-service-2.svg" alt="service-icon" width="55"
-                                        height="55">
-                                </div>
-                                <div class="service-content">
-                                    <h3>Fast Response Times</h3>
-                                    <a href="#" class="btn-read">Read More</a>
-                                </div>
+                            <div class="service-content">
+                                <h3>Comprehensive Coverage</h3>
+                                <a href="#" class="btn-read">Read More</a>
                             </div>
+                        </div>
+                    </div>
 
-                            <!-- item 3 -->
-                            <div class="service-item swiper-slide" data-aos="fade-up" data-aos-delay="200">
-                                <div class="service-icon">
-                                    <img src="./assets/images/icon-best-service-3.svg" alt="service-icon" width="55"
-                                        height="55">
-                                </div>
-                                <div class="service-content">
-                                    <h3>Commercial Services</h3>
-                                    <a href="#" class="btn-read">Read More</a>
-                                </div>
+                    <!-- item 2 -->
+                    <div class="swiper-slide h-auto" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <img src="./assets/images/icon-best-service-2.svg" alt="service-icon" width="55"
+                                    height="55">
                             </div>
+                            <div class="service-content">
+                                <h3>Fast Response Times</h3>
+                                <a href="#" class="btn-read">Read More</a>
+                            </div>
+                        </div>
+                    </div>
 
-                            <!-- item 4 -->
-                            <div class="service-item swiper-slide" data-aos="fade-up" data-aos-delay="300">
-                                <div class="service-icon">
-                                    <img src="./assets/images/icon-best-service-4.svg" alt="service-icon" width="55"
-                                        height="55">
-                                </div>
-                                <div class="service-content">
-                                    <h3>24/7 Emergency Services</h3>
-                                    <a href="#" class="btn-read">Read More</a>
-                                </div>
+                    <!-- item 3 -->
+                    <div class="swiper-slide h-auto" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <img src="./assets/images/icon-best-service-3.svg" alt="service-icon" width="55"
+                                    height="55">
+                            </div>
+                            <div class="service-content">
+                                <h3>Commercial Services</h3>
+                                <a href="#" class="btn-read">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- item 4 -->
+                    <div class="swiper-slide h-auto" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <img src="./assets/images/icon-best-service-4.svg" alt="service-icon" width="55"
+                                    height="55">
+                            </div>
+                            <div class="service-content">
+                                <h3>24/7 Emergency Services</h3>
+                                <a href="#" class="btn-read">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </section>
 
         <!-- section 3 -->
@@ -331,13 +341,14 @@
                                     </ul>
                                 </div>
                                 <div class="about-us-video">
-                                    <div class="image-video">
-                                        <img src="./assets/images/about-us-video-image.jpg" alt="image-video"
-                                            width="100%">
-                                    </div>
-                                    <a href="javascript:void(0)" class="play-button" id="openVideoModal">
-                                        <i class="fa-solid fa-play"></i>
+                                    <a href="https://www.youtube.com/embed/Y-x0efG1seA?autoplay=1&rel=0" data-fancybox
+                                        data-width="70%" data-height="80%" class="image-video">
+                                        <div class="play-button">
+                                            <i class="fa-solid fa-play"></i>
+                                        </div>
+                                        <img src="./assets/images/about-us-video-image.jpg" alt="Video poster" />
                                     </a>
+
                                 </div>
 
                                 <!-- Video Modal Overlay -->
@@ -1012,7 +1023,7 @@
                 </div>
                 <div class="row">
                     <!-- Choice Item 1 -->
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mb-4">
                         <div class="choice-item" data-aos="fade-up">
                             <div class="choice-icon">
                                 <img src="./assets/images/icon-why-choose-1.svg" alt="Emergency Services" width="55"
@@ -1026,7 +1037,7 @@
                     </div>
 
                     <!-- Choice Item 2 -->
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mb-4">
                         <div class="choice-item" data-aos="fade-up" data-aos-delay="100">
                             <div class="choice-icon">
                                 <img src="./assets/images/icon-why-choose-1.svg" alt="Customized Treatments" width="55"
@@ -1040,7 +1051,7 @@
                     </div>
 
                     <!-- Choice Item 3 -->
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mb-4">
                         <div class="choice-item" data-aos="fade-up" data-aos-delay="200">
                             <div class="choice-icon">
                                 <img src="./assets/images/icon-why-choose-1.svg" alt="Certified Professionals"
@@ -1054,7 +1065,7 @@
                     </div>
 
                     <!-- CTA Box -->
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mb-4">
                         <div class="cta-box" data-aos="fade-up" data-aos-delay="300">
                             <h3>Take Back Your Home From Pests. Today!</h3>
                             <span class="cta-label">CALL NOW</span>
@@ -1108,7 +1119,7 @@
                                             data-bs-target="#faqCollapse1" aria-expanded="true"
                                             aria-controls="faqCollapse1">
                                             <span class="faq-number">1.</span> What types of pests do you treat?
-                                            <i class="fas fa-chevron-down accordion-icon"></i>
+                                            <i class="fas fa-chevron-up accordion-icon"></i>
                                         </button>
                                     </h2>
                                     <div id="faqCollapse1" class="accordion-collapse collapse"
@@ -1363,12 +1374,12 @@
         <section class="section-11">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7 col-md-6">
+                    <div class="col-lg-7 col-12 order-lg-1 order-2">
                         <div class="box-img">
                             <img src="./assets/images/cta-box-image.png" alt="" width="634" height="622">
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-6">
+                    <div class="col-lg-5 col-12 order-lg-2 order-1">
                         <div class="cta-box-content">
                             <div class="sec-title">
                                 <h2>
@@ -1415,7 +1426,7 @@
                     </h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="blog-item" data-aos="fade-up">
                             <a href="#" class="blog-image image-anime">
                                 <img src="./assets/images/post-1.jpg" alt="" width="1366" height="768">
@@ -1428,7 +1439,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="blog-item" data-aos="fade-up" data-aos-delay="100">
                             <a href="#" class="blog-image image-anime">
                                 <img src="./assets/images/post-2.jpg" alt="" width="1366" height="768">
@@ -1441,7 +1452,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="blog-item" data-aos="fade-up" data-aos-delay="200">
                             <a href="#" class="blog-image image-anime">
                                 <img src="./assets/images/post-3.jpg" alt="" width="1366" height="768">
@@ -1559,15 +1570,26 @@
     <!-- mobile menu -->
     <script src="assets/js/mobile_menu.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            once: true,
+        });
+
     </script>
     <script src="assets/js/back_on_top.js"></script>
     <script src="assets/js/cursor_dot.js"></script>
-    <script src="assets/js/accordion_faq.js"></script>
     <script src="assets/js/portfolio_filter.js"></script>
     <script src="assets/js/counter_animation.js"></script>
-    <!-- video modal -->
-    <script src="assets/js/video_modal.js"></script>
+    <!-- fancyapp  -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            Carousel: {
+                Video: {
+                    autoplay: true,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
