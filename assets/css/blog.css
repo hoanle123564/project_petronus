@@ -1,0 +1,224 @@
+.header-blog {
+    position: relative;
+    background-image: url("../images/page-header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 145px 0;
+    margin-top: 130px;
+}
+
+.header-blog::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(270deg, rgba(0, 47, 71, 0.18) 21.87%, rgba(0, 47, 71, 0.9) 100%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.header-blog .header-box {
+    position: relative;
+    text-decoration: none;
+    color: var(--white-color);
+    z-index: 2;
+}
+
+.header-blog .header-box h1 {
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 700;
+}
+
+.header-blog .header-box a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.body-blog {
+    padding: 60px 0;
+
+}
+
+/* Blog Item Card */
+.body-blog .swiper-slide {
+    height: auto;
+}
+
+.body-blog .blog-item {
+    background-color: var(--white-color);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--divider-color);
+    box-shadow: 0px 0px 30px 0px #002F471A;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Blog Image Container */
+.body-blog .blog-image {
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.body-blog .blog-image a {
+    display: block;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+}
+
+.body-blog .blog-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Hover Effect - Image Scale 1.1 */
+.body-blog .blog-item:hover .blog-image img {
+    transform: scale(1.1);
+}
+
+/* Blog Content */
+.body-blog .blog-content {
+    padding: 0 20px 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.body-blog .blog-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    flex: 1;
+}
+
+.body-blog .blog-item .btn-read {
+    margin-top: auto;
+}
+
+.body-blog .blog-title a {
+    color: var(--primary-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.body-blog .blog-title a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .body-blog .blog-item {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .body-blog {
+        padding: 60px 0;
+    }
+
+    .body-blog .blog-title {
+        font-size: 18px;
+    }
+}
+
+/* Swiper Pagination Styling */
+.body-blog .swiper-pagination {
+    position: static;
+    margin-top: 0;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px;
+}
+
+.body-blog .swiper-pagination-bullet {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #F5F7F2;
+    color: #002F47;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 !important;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.body-blog .swiper-pagination-bullet:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.body-blog .swiper-pagination-bullet-active {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+/* Swiper Navigation Buttons */
+.body-blog .button-next,
+.body-blog .button-prev {
+    position: static;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 20px;
+    background-color: #F5F7F2;
+    margin: 0;
+    transition: all 0.3s ease;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-blog .button-next:after,
+.body-blog .button-prev:after {
+    font-size: 16px;
+    color: #002F47;
+    font-weight: 900;
+    transition: all 0.3s ease;
+}
+
+.body-blog .button-next:hover,
+.body-blog .button-prev:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.body-blog .button-next:hover:after,
+.body-blog .button-prev:hover:after {
+    color: var(--white-color);
+}
+
+.body-blog .button-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Blog Pagination Container */
+.blog-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 50px;
+}
