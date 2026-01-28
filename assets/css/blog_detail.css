@@ -1,0 +1,233 @@
+.header-blog {
+    position: relative;
+    background-image: url("../images/page-header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 145px 0;
+    margin-top: 130px;
+}
+
+.header-blog::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(270deg, rgba(0, 47, 71, 0.18) 21.87%, rgba(0, 47, 71, 0.9) 100%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.header-blog .header-box {
+    position: relative;
+    text-decoration: none;
+    color: var(--white-color);
+    z-index: 2;
+}
+
+.header-blog .header-box h1 {
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 700;
+}
+
+.header-blog .header-box span {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.body-blog {
+    padding: 60px 0;
+}
+
+.body-blog .blog-image img {
+    border-radius: 15px;
+}
+
+/* Post Entry */
+.body-blog .post-entry {
+    margin-top: 40px;
+}
+
+.body-blog .post-entry p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #5A6D7A;
+    margin-bottom: 20px;
+}
+
+/* Post Discover Quote Box */
+.body-blog .post-discover {
+    position: relative;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    padding: 30px 30px 30px 80px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 30px 0;
+}
+
+.body-blog .post-discover::before {
+    content: '\201C';
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--white-color);
+    opacity: 0.8;
+    line-height: 1;
+    font-family: Georgia, serif;
+}
+
+/* Heading h2 */
+.body-blog .post-entry h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    color: var(--primary-color);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* List ul */
+.body-blog .post-entry ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.body-blog .post-entry ul li {
+    font-size: 16px;
+    line-height: 32px;
+    color: #5A6D7A;
+    margin-bottom: 8px;
+}
+
+.body-blog .post-entry ul li::marker {
+    color: var(--accent-color);
+}
+
+/* Tag Section */
+.body-blog .tag {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid var(--divider-color);
+}
+
+.body-blog .tag-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.body-blog .tag-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.body-blog .tag-content ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.body-blog .tag-content ul li a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.body-blog .tag-content ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Social Icons */
+.body-blog .social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.body-blog .social ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.body-blog .social ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.body-blog .social ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .body-blog .tag-content {
+        flex-wrap: wrap;
+    }
+
+    .body-blog .social {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-blog .header-box h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .body-blog .post-entry h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .body-blog .post-discover {
+        padding: 25px 25px 25px 70px;
+        font-size: 16px;
+    }
+
+    .body-blog .post-discover::before {
+        font-size: 50px;
+        left: 20px;
+    }
+}
