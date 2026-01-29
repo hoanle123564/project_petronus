@@ -30,13 +30,15 @@ h6 {
     line-height: 1.2;
 }
 
+* {
+    font-family: var(--default-font);
+
+}
+
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: var(--default-font);
     font-size: 14px;
-    font-family: "Onest", sans-serif;
 
 }
 

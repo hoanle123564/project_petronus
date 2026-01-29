@@ -106,29 +106,3 @@ var projectSwiper = new Swiper(".project-swiper", {
   slidesPerView: 1,
   spaceBetween: 20,
 });
-
-// Blog Section Swiper
-var swiperBlog = new Swiper(".swiperBlog", {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  breakpoints: {
-    // >= 992px: 2 columns, 3 rows
-    992: {
-      slidesPerView: 2,
-      spaceBetween: 24,
-      grid: {
-        rows: 3,
-        fill: 'row',
-      },
-    },
-    // >= 1200px: 3 columns, 2 rows
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 24,
-      grid: {
-        rows: 2,
-        fill: 'row',
-      },
-    },
-  },
-});
