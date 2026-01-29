@@ -143,17 +143,17 @@
 /* Responsive */
 @media (max-width: 1199px) {
     .section-9 .answers-image-1 {
-        width: 260px;
+        width: 300px;
+        left: -15%;
     }
 
     .section-9 .answers-image-2 {
         width: 200px;
-        opacity: 0;
-        visibility: hidden;
     }
 
     .section-9 .answers-image-3 {
-        width: 260px;
+        width: 300px;
+        bottom: 2%;
     }
 }
 
@@ -172,8 +172,21 @@
         background-size: 80px;
     }
 
+    .section-9 .answers-image-1 {
+        left: 0;
+        bottom: 25%;
+    }
+
+    .section-9 .answers-image-2 {
+        width: 200px;
+        top: 0;
+        right: 25%;
+    }
+
     .section-9 .answers-image-3 {
         width: 290px;
+        right: 22%;
+        bottom: 0;
     }
 
     .section-9 .faq-content {
@@ -194,16 +207,23 @@
         height: 400px;
         margin-bottom: 40px;
         background-size: 60px;
-        width: 0%;
         align-items: center;
         margin: 0 auto;
     }
 
     .section-9 .answers-image-1 {
         width: 200px;
+        left: 10%;
+    }
+
+    .section-9 .answers-image-2 {
+        width: 180px;
+        right: 33%;
+        top: 0;
     }
 
     .section-9 .answers-image-3 {
+        right: 30%;
         width: 230px;
         bottom: -6%;
     }
@@ -232,26 +252,22 @@
     .section-9 .answers-images {
         height: 320px;
         margin-bottom: 40px;
-        background-size: 50px;
-        background-position: center;
     }
 
     .section-9 .answers-image-1 {
-        width: 160px;
-        left: 0;
+        width: 180px;
+        left: 10%;
         top: 0;
     }
 
     .section-9 .answers-image-2 {
         width: 130px;
-        top: 10%;
-        right: 0;
+        right: 27%;
     }
 
     .section-9 .answers-image-3 {
         width: 180px;
-        right: 0;
-        bottom: 0;
+        right: 27%;
     }
 
     .section-9 .accordion-button {
