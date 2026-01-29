@@ -138,37 +138,40 @@
 }
 
 /* Swiper Pagination Styling */
-.body-blog .swiper-pagination {
+.body-blog .pagination {
     position: static;
     margin-top: 0;
     display: flex;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 }
 
-.body-blog .swiper-pagination-bullet {
+.body-blog .pagination a {
+    text-decoration: none;
+}
+
+.body-blog .pagination-item {
     width: 50px;
     height: 50px;
-    border-radius: 12px;
-    background-color: #F5F7F2;
-    color: #002F47;
+    border-radius: 16px;
+    background-color: #F5F7F8;
+    color: var(--primary-color);
     font-size: 16px;
     font-weight: 600;
-    margin: 0 !important;
-    opacity: 1;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.body-blog .swiper-pagination-bullet:hover {
+.body-blog .pagination-item:hover {
     background-color: var(--accent-color);
     color: var(--white-color);
 }
 
-.body-blog .swiper-pagination-bullet-active {
+.body-blog .pagination-item.active {
     background-color: var(--accent-color);
     color: var(--white-color);
 }
@@ -179,33 +182,33 @@
     position: static;
     width: 50px;
     height: 50px;
-    border-radius: 12px;
-    font-size: 20px;
-    background-color: #F5F7F2;
+    border-radius: 16px;
+    font-size: 18px;
+    background-color: #F5F7F8;
     margin: 0;
     transition: all 0.3s ease;
     color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    border: none;
 }
 
-.body-blog .button-next:after,
-.body-blog .button-prev:after {
+.body-blog .button-next i,
+.body-blog .button-prev i {
     font-size: 16px;
-    color: #002F47;
-    font-weight: 900;
+    color: var(--primary-color);
     transition: all 0.3s ease;
 }
 
 .body-blog .button-next:hover,
 .body-blog .button-prev:hover {
     background-color: var(--accent-color);
-    color: var(--white-color);
 }
 
-.body-blog .button-next:hover:after,
-.body-blog .button-prev:hover:after {
+.body-blog .button-next:hover i,
+.body-blog .button-prev:hover i {
     color: var(--white-color);
 }
 
@@ -219,6 +222,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 12px;
     margin-top: 50px;
 }

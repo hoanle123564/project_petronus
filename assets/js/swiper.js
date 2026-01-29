@@ -111,13 +111,6 @@ var projectSwiper = new Swiper(".project-swiper", {
 var swiperBlog = new Swiper(".swiperBlog", {
   slidesPerView: 1,
   spaceBetween: 20,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
-  },
   breakpoints: {
     // >= 992px: 2 columns, 3 rows
     992: {
